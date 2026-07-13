@@ -1,5 +1,7 @@
 # resume
 
+<img src=".github/social-card.png" alt="resume" width="100%" />
+
 My resume, written in [Typst](https://typst.app). Source: [`resume.typ`](resume.typ) · Compiled: [`resume.pdf`](resume.pdf)
 
 ```sh
