@@ -36,10 +36,11 @@
 #section("Experience")
 
 #entry(
-  [*Software Engineer* | Lindy.ai],
+  [*Software Engineer* | Lindy.ai — Agents team],
   [*May 2026 -- Present*],
 )
-- Implemented GEPA Prompt optimization in production systems handling thousands of user agents
+- Shipped Online Scoring: evaluation system reading and grading millions of production agent traces per week with LLM judges orchestrated by Temporal workflows
+- Implemented GEPA prompt optimization in production systems handling thousands of user agents
 
 // ===== PROJECTS =====
 #section("Projects")
@@ -93,9 +94,9 @@
 
 #entry(
   [*Purdue University* | Polytechnic Institute],
-  [*Expected May 2028*],
+  [*On leave since May 2026*],
 )
-B.S. Web Programming and Design \
+B.S. Web Programming and Design (on leave of absence) \
 Relevant Coursework: C Programming (CS 159), Microcontroller Programming in C (ECE 264), Intro to Web Development (CGT 141)
 
 #v(4pt)
