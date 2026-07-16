@@ -97,9 +97,9 @@
 
 #entry(
   [*Purdue University* | Polytechnic Institute],
-  [*On leave since May 2026*],
+  [*Aug 2024 -- Present*],
 )
-B.S. Web Programming and Design (on leave of absence)
+B.S. Web Programming and Design (on leave of absence since May 2026)
 
 #v(4pt)
 #text(size: 9.5pt)[*Leadership:* Founded high school robotics team; competed at FIRST Robotics Competition (FRC) World Championships (2#sym.times)]
