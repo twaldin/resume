@@ -7,7 +7,7 @@
 #set list(indent: 0pt, body-indent: 6pt, spacing: 3pt)
 
 #let section(title) = {
-  v(6pt)
+  v(4pt)
   text(size: 11pt, weight: "bold", tracking: 0.5pt)[#upper(title)]
   v(-6pt)
   line(length: 100%, stroke: 0.5pt)
@@ -44,7 +44,7 @@
   [*May 2026 -- Present*],
 )
 - Shipped Online Scoring: evaluation system reading and grading millions of production agent traces per week with LLM judges orchestrated by Temporal workflows
-- Implemented GEPA prompt optimization in production systems handling thousands of user agents, searching for Pareto-optimal prompts over hundreds of evals
+- Implemented GEPA (evolutionary prompt optimization) in production systems handling thousands of user agents, searching for Pareto-optimal prompts over hundreds of evals
 
 // ===== PROJECTS =====
 #section("Projects")
@@ -54,8 +54,8 @@
   [*2025 -- Present*],
 )
 - *hone:* GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%, no regressions) on a held-out GitHub bug set, for \~\$1 in mutator tokens
-- *AgentElo:* pairwise Bradley-Terry leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. Read-only baseline at #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]. CLI now runs locally to rank your agent against the bundled snapshot (public submissions closed after Stanford's Terminal-Bench 2.0 + Harbor shipped equivalent hosted infra)
-- *harness:* extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library covering 13 coding CLIs with byte-level fixture parity between the two implementations
+- *AgentElo:* pairwise Bradley-Terry (Elo-style) leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. Read-only baseline at #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]. CLI runs locally to rank your agent against the bundled snapshot
+- *harness:* extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library covering 13 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
 - *flt:* multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
 - *current focus:* ground-up hone rewrite — self-optimizing agent harness with a trusted eval kernel (sandboxed Docker broker, metered LLM proxy, pre-registered promotion gates) and a fully mutable optimizer loop; plus monoagent (pre-release)
 
@@ -86,9 +86,9 @@
 #grid(
   columns: (85pt, 1fr),
   row-gutter: 4pt,
-  [*Languages:*], [TypeScript, JavaScript, Python, C, Bash],
-  [*Frameworks:*], [Node.js, React, Next.js, Express, Tailwind, Socket.IO, shadcn/ui],
-  [*Tools:*], [Git, Docker, Temporal, PostgreSQL + pgvector, SQLite, Redis, nginx, tmux, Cloudflare Workers, Bun, uv],
+  [*Languages:*], [TypeScript, JavaScript, Python, C, Shell (Bash, Zsh)],
+  [*Frameworks:*], [Node.js, React, Next.js, Express, REST APIs, Tailwind, Socket.IO, shadcn/ui],
+  [*Tools:*], [Git, CI/CD, Docker, Temporal, SQL (PostgreSQL, pgvector, SQLite), Redis, nginx, tmux, Cloudflare Workers, Bun, uv],
   [*AI:*], [agent evals and benchmarking, prompt optimization (GEPA, DSPy), LLM-as-judge pipelines, RAG],
 )
 
@@ -101,5 +101,5 @@
 )
 B.S. Web Programming and Design (on leave of absence since May 2026)
 
-#v(4pt)
+#v(2pt)
 #text(size: 9.5pt)[*Leadership:* Founded high school robotics team; competed at FIRST Robotics Competition (FRC) World Championships (2#sym.times)]
