@@ -33,7 +33,7 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization. also: open-source agent tooling
+  Reliability \@ Lindy.ai — agent evals, prompt optimization, production scoring
 ]
 
 // ===== EXPERIENCE =====
@@ -49,15 +49,6 @@
 // ===== PROJECTS =====
 #section("Projects")
 
-#entry(
-  [*Open source (side)* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
-  [*2025*],
-)
-- GEPA prompt optimizer: Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%, no regressions) on a held-out GitHub bug set, for \~\$1 in mutator tokens
-- Pairwise Bradley-Terry leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs
-- Shared adapter library for 13 coding CLIs (Python + TypeScript) and a multi-agent raw-ANSI TUI
-
-#v(2pt)
 #entry(
   [*CS2 Trade-Up Bot* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, React, Express, PostgreSQL, Redis] #h(4pt) #link("https://tradeupbot.app")[tradeupbot.app]],
   [*2025 -- Present*],
@@ -78,6 +69,13 @@
   [*2025*],
 )
 - Co-founded AI study platform using RAG + Claude to answer questions from uploaded course documents or Canvas API import; pgvector semantic search, streaming responses, auto-generated flashcards and quizzes
+
+#v(2pt)
+#entry(
+  [*Coding-agent tools* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
+  [*2025*],
+)
+- Also shipped harness, hone, flt, and agentelo — open-source CLI tooling around coding agents
 
 // ===== TECHNICAL SKILLS =====
 #section("Technical Skills")
