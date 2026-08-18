@@ -33,7 +33,7 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Reliability \@ Lindy.ai — agent evals, prompt optimization, production scoring
+  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization
 ]
 
 // ===== EXPERIENCE =====
