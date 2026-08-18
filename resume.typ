@@ -46,7 +46,7 @@
 - Shipped Online Scoring: evaluation system reading and grading millions of production agent traces per week with LLM judges orchestrated by Temporal workflows
 - Implemented GEPA (evolutionary prompt optimization) in production systems handling thousands of user agents, searching for Pareto-optimal prompts over hundreds of evals
 - Led Reliability's eval and scoring program: owned the cutover from toy-harness evals to production-faithful replay, plus scoring-honesty fixes after prod incidents so offline numbers match live agent behavior
-- Reworked the eval system to wrap production: freeze a clone of the live agent (graph, identity, tool world), replay captured provider state in a contained sandbox, and run scores on Temporal workers with default-deny egress
+- Reworked the eval system to wrap production: capture live agent runs as frozen cases and replay them in isolated clones (no live secrets or egress) against current code, with Temporal workers and a cutover so existing suite/score/compare workflows kept working
 
 // ===== PROJECTS =====
 #section("Projects")
