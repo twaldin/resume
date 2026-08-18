@@ -33,7 +33,7 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Software engineer, Reliability \@ Lindy.ai — agent evals, prompt optimization, OSS coding-agent suite (#link("https://github.com/twaldin/harness")[harness], #link("https://github.com/twaldin/hone")[hone], #link("https://github.com/twaldin/flt")[flt], #link("https://github.com/twaldin/agentelo")[agentelo])
+  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization. also: open-source agent tooling
 ]
 
 // ===== EXPERIENCE =====
@@ -46,22 +46,18 @@
 - Shipped Online Scoring: evaluation system reading and grading millions of production agent traces per week with LLM judges orchestrated by Temporal workflows
 - Implemented GEPA (evolutionary prompt optimization) in production systems handling thousands of user agents, searching for Pareto-optimal prompts over hundreds of evals
 
-// ===== OPEN SOURCE =====
-#section("Open Source")
-
-#entry(
-  [*Agentic Engineering Suite* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python, Bun, tmux, GEPA] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
-  [*2025 -- Present*],
-)
-- *hone:* GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%, no regressions) on a held-out GitHub bug set, for \~\$1 in mutator tokens
-- *AgentElo:* pairwise Bradley-Terry (Elo-style) leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. Read-only baseline at #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]. CLI runs locally to rank your agent against the bundled snapshot
-- *harness:* extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library covering 13 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
-- *flt:* multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
-- *current focus:* ground-up hone rewrite — self-optimizing agent harness with a trusted eval kernel (sandboxed Docker broker, metered LLM proxy, pre-registered promotion gates) and a fully mutable optimizer loop; plus monoagent (pre-release)
-
 // ===== PROJECTS =====
 #section("Projects")
 
+#entry(
+  [*Open source (side)* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
+  [*2025*],
+)
+- GEPA prompt optimizer: Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%, no regressions) on a held-out GitHub bug set, for \~\$1 in mutator tokens
+- Pairwise Bradley-Terry leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs
+- Shared adapter library for 13 coding CLIs (Python + TypeScript) and a multi-agent raw-ANSI TUI
+
+#v(2pt)
 #entry(
   [*CS2 Trade-Up Bot* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, React, Express, PostgreSQL, Redis] #h(4pt) #link("https://tradeupbot.app")[tradeupbot.app]],
   [*2025 -- Present*],
