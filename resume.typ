@@ -3,7 +3,7 @@
 
 #set page(paper: "us-letter", margin: (top: 0.4in, bottom: 0.4in, left: 0.5in, right: 0.5in))
 #set text(size: 10pt)
-#set par(leading: 0.5em, justify: false)
+#set par(leading: 0.5em, justify: false, spacing: 0.65em)
 #set list(indent: 0pt, body-indent: 6pt, spacing: 3pt)
 
 #let section(title) = {
@@ -33,7 +33,7 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Software engineer working on AI agents — evals, prompt optimization, oss dev tooling (#link("https://github.com/twaldin/harness")[harness], #link("https://github.com/twaldin/hone")[hone], #link("https://github.com/twaldin/flt")[flt], #link("https://github.com/twaldin/agentelo")[agentelo])
+  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization
 ]
 
 // ===== EXPERIENCE =====
@@ -49,17 +49,6 @@
 // ===== PROJECTS =====
 #section("Projects")
 
-#entry(
-  [*Agentic Engineering Suite* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python, Bun, tmux, GEPA] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
-  [*2025 -- Present*],
-)
-- *hone:* GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%, no regressions) on a held-out GitHub bug set, for \~\$1 in mutator tokens
-- *AgentElo:* pairwise Bradley-Terry (Elo-style) leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. Read-only baseline at #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]. CLI runs locally to rank your agent against the bundled snapshot
-- *harness:* extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library covering 13 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
-- *flt:* multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
-- *current focus:* ground-up hone rewrite — self-optimizing agent harness with a trusted eval kernel (sandboxed Docker broker, metered LLM proxy, pre-registered promotion gates) and a fully mutable optimizer loop; plus monoagent (pre-release)
-
-#v(2pt)
 #entry(
   [*CS2 Trade-Up Bot* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, React, Express, PostgreSQL, Redis] #h(4pt) #link("https://tradeupbot.app")[tradeupbot.app]],
   [*2025 -- Present*],
@@ -80,6 +69,13 @@
   [*2025*],
 )
 - Co-founded AI study platform using RAG + Claude to answer questions from uploaded course documents or Canvas API import; pgvector semantic search, streaming responses, auto-generated flashcards and quizzes
+
+#v(2pt)
+#entry(
+  [*Coding-agent tools* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
+  [*2025*],
+)
+- Also shipped harness, hone, flt, and agentelo — open-source CLI tooling around coding agents
 
 // ===== TECHNICAL SKILLS =====
 #section("Technical Skills")
