@@ -3,7 +3,7 @@
 
 #set page(paper: "us-letter", margin: (top: 0.4in, bottom: 0.4in, left: 0.5in, right: 0.5in))
 #set text(size: 10pt)
-#set par(leading: 0.5em, justify: false)
+#set par(leading: 0.5em, justify: false, spacing: 0.65em)
 #set list(indent: 0pt, body-indent: 6pt, spacing: 3pt)
 
 #let section(title) = {
@@ -33,7 +33,7 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Software engineer working on AI agents — evals, prompt optimization, oss dev tooling (#link("https://github.com/twaldin/harness")[harness], #link("https://github.com/twaldin/hone")[hone], #link("https://github.com/twaldin/flt")[flt], #link("https://github.com/twaldin/agentelo")[agentelo])
+  Software engineer, Reliability \@ Lindy.ai — agent evals, prompt optimization, OSS coding-agent suite (#link("https://github.com/twaldin/harness")[harness], #link("https://github.com/twaldin/hone")[hone], #link("https://github.com/twaldin/flt")[flt], #link("https://github.com/twaldin/agentelo")[agentelo])
 ]
 
 // ===== EXPERIENCE =====
@@ -46,8 +46,8 @@
 - Shipped Online Scoring: evaluation system reading and grading millions of production agent traces per week with LLM judges orchestrated by Temporal workflows
 - Implemented GEPA (evolutionary prompt optimization) in production systems handling thousands of user agents, searching for Pareto-optimal prompts over hundreds of evals
 
-// ===== PROJECTS =====
-#section("Projects")
+// ===== OPEN SOURCE =====
+#section("Open Source")
 
 #entry(
   [*Agentic Engineering Suite* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python, Bun, tmux, GEPA] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
@@ -59,7 +59,9 @@
 - *flt:* multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
 - *current focus:* ground-up hone rewrite — self-optimizing agent harness with a trusted eval kernel (sandboxed Docker broker, metered LLM proxy, pre-registered promotion gates) and a fully mutable optimizer loop; plus monoagent (pre-release)
 
-#v(2pt)
+// ===== PROJECTS =====
+#section("Projects")
+
 #entry(
   [*CS2 Trade-Up Bot* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, React, Express, PostgreSQL, Redis] #h(4pt) #link("https://tradeupbot.app")[tradeupbot.app]],
   [*2025 -- Present*],
