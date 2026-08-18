@@ -50,6 +50,34 @@
 #section("Projects")
 
 #entry(
+  [*hone* #h(4pt) #text(size: 9pt, style: "italic")[Python, GEPA/dspy, harness] #h(4pt) #link("https://github.com/twaldin/hone")[github.com/twaldin/hone]],
+  [*2025 -- Present*],
+)
+- GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%, no regressions) on a held-out GitHub bug set, for \~\$1 in mutator tokens
+
+#v(2pt)
+#entry(
+  [*harness* #h(4pt) #text(size: 9pt, style: "italic")[Python, TypeScript] #h(4pt) #link("https://github.com/twaldin/harness")[github.com/twaldin/harness]],
+  [*2025*],
+)
+- Extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library covering 13 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
+
+#v(2pt)
+#entry(
+  [*flt* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Bun, tmux] #h(4pt) #link("https://github.com/twaldin/flt")[github.com/twaldin/flt]],
+  [*2025*],
+)
+- Multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
+
+#v(2pt)
+#entry(
+  [*AgentElo* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Next.js, SQLite] #h(4pt) #link("https://github.com/twaldin/agentelo")[github.com/twaldin/agentelo]],
+  [*2025*],
+)
+- Pairwise Bradley-Terry (Elo-style) leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. Read-only baseline at #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]. CLI runs locally to rank your agent against the bundled snapshot
+
+#v(2pt)
+#entry(
   [*CS2 Trade-Up Bot* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, React, Express, PostgreSQL, Redis] #h(4pt) #link("https://tradeupbot.app")[tradeupbot.app]],
   [*2025 -- Present*],
 )
@@ -69,13 +97,6 @@
   [*2025*],
 )
 - Co-founded AI study platform using RAG + Claude to answer questions from uploaded course documents or Canvas API import; pgvector semantic search, streaming responses, auto-generated flashcards and quizzes
-
-#v(2pt)
-#entry(
-  [*Coding-agent tools* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://github.com/twaldin")[github.com/twaldin]],
-  [*2025*],
-)
-- Also shipped harness, hone, flt, and agentelo — open-source CLI tooling around coding agents
 
 // ===== TECHNICAL SKILLS =====
 #section("Technical Skills")
