@@ -33,7 +33,7 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization; OSS coding-agent tooling
+  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization
 ]
 
 // ===== EXPERIENCE =====
@@ -43,10 +43,8 @@
   [*Software Engineer* | Lindy.ai — Reliability Team],
   [*May 2026 -- Present*],
 )
-- Shipped Online Scoring: evaluation system reading and grading millions of production agent traces per week with LLM judges orchestrated by Temporal workflows
+- Shipped production agent evals: Online Scoring on millions of traces/week, plus replay that freezes source facts and world then compiles a fresh graph under current prod and overrides so regressions measure today's product, not a stale snapshot. Infra and data-gap failures are skips, not model zeros.
 - Implemented GEPA (evolutionary prompt optimization) in production systems handling thousands of user agents, searching for Pareto-optimal prompts over hundreds of evals
-- Led Reliability's eval and scoring program: treated infra and data-gap failures as skips rather than model zeros, attributed runs to the provider-served model, and cut the admin surface over to production-faithful replay
-- Rebuilt eval replay to freeze source facts and world, compile a fresh production graph under run overrides, and isolate side effects in the execution sandbox so regressions measure current product behavior
 
 // ===== PROJECTS =====
 #section("Projects")
@@ -55,7 +53,7 @@
   [*hone* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python, GEPA] #h(4pt) #link("https://github.com/twaldin/hone")[github.com/twaldin/hone]],
   [*2025*],
 )
-- GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved (65% #sym.arrow.r 85%) on a held-out GitHub bug set, for \~\$1 in mutator tokens. Being rewritten.
+- GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved on a held-out GitHub bug set, for \~\$1 in mutator tokens.
 
 #v(2pt)
 #entry(
