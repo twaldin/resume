@@ -33,14 +33,14 @@
   #link("https://x.com/twaldin")[x.com/twaldin] |
   #link("https://tim.waldin.net")[tim.waldin.net]
   #v(2pt)
-  Software engineer, Reliability \@ Lindy.ai — production agent evals and prompt optimization
+  Software Engineer, Reliability/Evals \@ Lindy.ai — production agent evals and prompt optimization
 ]
 
 // ===== EXPERIENCE =====
 #section("Experience")
 
 #entry(
-  [*Software Engineer* | Lindy.ai — Reliability Team],
+  [*Software Engineer, Reliability/Evals* | Lindy.ai],
   [*May 2026 -- Present*],
 )
 - Shipped production agent evals: Online Scoring on millions of traces/week, plus replay that freezes source facts and world then compiles a fresh graph under current prod and overrides so regressions measure today's product, not a stale snapshot. Infra and data-gap failures are skips, not model zeros.
@@ -51,35 +51,35 @@
 
 #entry(
   [*hone* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python, GEPA] #h(4pt) #link("https://github.com/twaldin/hone")[github.com/twaldin/hone]],
-  [*2025*],
+  [*2026*],
 )
-- GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; took Claude Haiku 4.5 from 6/9 to 8/9 solved on a held-out GitHub bug set, for \~\$1 in mutator tokens.
+- GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; its evolved prompt lifted Claude Haiku 4.5 from 0.65 to 0.85 mean held-out score (9 unseen bugs × 3 samples).
 
 #v(2pt)
 #entry(
   [*harness* #h(4pt) #text(size: 9pt, style: "italic")[Python, TypeScript] #h(4pt) #link("https://github.com/twaldin/harness")[github.com/twaldin/harness]],
-  [*2025*],
+  [*2026*],
 )
-- Extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library covering 13 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
+- Extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library with adapters for 26 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
 
 #v(2pt)
 #entry(
   [*flt* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, tmux] #h(4pt) #link("https://github.com/twaldin/flt")[github.com/twaldin/flt]],
-  [*2025*],
+  [*2026*],
 )
 - Multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
 
 #v(2pt)
 #entry(
   [*AgentElo* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]],
-  [*2025*],
+  [*2026*],
 )
 - Pairwise Bradley-Terry (Elo-style) leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. CLI runs locally to rank your agent against the bundled snapshot
 
 #v(2pt)
 #entry(
   [*CS2 Trade-Up Bot* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, React, Express, PostgreSQL, Redis] #h(4pt) #link("https://tradeupbot.app")[tradeupbot.app]],
-  [*2025 -- Present*],
+  [*2026 -- Present*],
 )
 - Full-stack market arbitrage platform analyzing profitable CS2 trade-up contracts across 3 marketplaces in real time with 100+ daily active users
 - Discovery engine evaluating 100,000+ listing combinations per cycle with Steam OpenID auth, Stripe subscriptions, Cloudflare Turnstile, real-time WebSocket feeds, 17-currency display
