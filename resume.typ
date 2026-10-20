@@ -62,7 +62,7 @@
   [*2026*],
 )
 - Engine that improves code against a fixed, measurable objective: a model-backed optimizer proposes changes in a sandbox, and separate trusted code scores every candidate against the baseline so the optimizer never grades its own work.
-- April's first result: lifted Claude Haiku 4.5 from 0.65 to 0.85 mean held-out score (9 unseen bugs × 3 samples).
+- Original prompt optimizer's first result: lifted Claude Haiku 4.5 from 0.65 to 0.85 mean held-out score (9 unseen bugs × 3 samples) in April.
 
 #v(2pt)
 #entry(
