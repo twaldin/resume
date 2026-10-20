@@ -50,10 +50,19 @@
 #section("Projects")
 
 #entry(
-  [*hone* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python, GEPA] #h(4pt) #link("https://github.com/twaldin/hone")[github.com/twaldin/hone]],
+  [*easl* #h(4pt) #text(size: 9pt, style: "italic")[Swift] #h(4pt) #link("https://easl.sh")[easl.sh]],
+  [*2026 -- Present*],
+)
+- Native Mac app where coding agents run in real terminals on one infinite board beside code tiles, call graphs, a browser and notes; free and MIT, signed releases through a Homebrew cask (v0.3.0).
+- Hyper-click diagram shapes, page elements or note items into the agent's next prompt; libghostty terminals and language-server code tiles.
+
+#v(2pt)
+#entry(
+  [*hone* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Docker] #h(4pt) #link("https://github.com/twaldin/hone")[github.com/twaldin/hone]],
   [*2026*],
 )
-- GEPA-based prompt optimizer that drives coding-CLI subscriptions through `harness` as its mutator instead of paid API keys; its evolved prompt lifted Claude Haiku 4.5 from 0.65 to 0.85 mean held-out score (9 unseen bugs × 3 samples).
+- Engine that improves code against a fixed, measurable objective: a model-backed optimizer proposes changes in a sandbox, and separate trusted code scores every candidate against the baseline so the optimizer never grades its own work.
+- Original prompt optimizer's first result: lifted Claude Haiku 4.5 from 0.65 to 0.85 mean held-out score (9 unseen bugs × 3 samples) in April.
 
 #v(2pt)
 #entry(
@@ -61,20 +70,6 @@
   [*2026*],
 )
 - Extracted the multi-CLI adapter layer into a published Python (`harness-cli`) and TypeScript (`@twaldin/harness-ts`) library with adapters for 26 coding CLIs, with a shared test-fixture suite enforcing identical behavior across both implementations
-
-#v(2pt)
-#entry(
-  [*flt* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, tmux] #h(4pt) #link("https://github.com/twaldin/flt")[github.com/twaldin/flt]],
-  [*2026*],
-)
-- Multi-agent orchestrator — generalized my tmux-orchestrator + claudecord prototypes to 6 coding CLIs; raw-ANSI TUI with damage-tracked screen buffer, vim keybinds, inter-agent inbox, git-worktree isolation. Published as `@twaldin/flt-cli` on npm
-
-#v(2pt)
-#entry(
-  [*AgentElo* #h(4pt) #text(size: 9pt, style: "italic")[TypeScript, Python] #h(4pt) #link("https://tim.waldin.net/agentelo")[tim.waldin.net/agentelo]],
-  [*2026*],
-)
-- Pairwise Bradley-Terry (Elo-style) leaderboard ranking 148 agents across 6 harnesses on real GitHub PRs — \~1B tokens, \$642 spend, 3.5K verified runs. CLI runs locally to rank your agent against the bundled snapshot
 
 #v(2pt)
 #entry(
@@ -86,7 +81,7 @@
 
 #v(2pt)
 #entry(
-  [*term-site* #h(4pt) #text(size: 9pt, style: "italic")[Next.js, Docker, Socket.IO, xterm.js] #h(4pt) #link("https://tim.waldin.net")[tim.waldin.net]],
+  [*tim.waldin.net* #h(4pt) #text(size: 9pt, style: "italic")[Next.js, Docker, Socket.IO, xterm.js] #h(4pt) #link("https://tim.waldin.net")[tim.waldin.net]],
   [*2025*],
 )
 - Terminal-based portfolio where visitors explore projects inside isolated Docker containers through a browser shell; URL paths deep-link to shell commands (/blog/\<slug\>, /projects/\<name\>)
